@@ -1,11 +1,9 @@
-gova
-===============
+#gova
 
 It provides validation functions using struct tags.
 
 
-How to use?
----------------
+##How to use?
 
 ```
 import "github.com/tenntenn/gova"
@@ -22,3 +20,6 @@ fmt.Println(gova.Validate(v1)) // return nil
 v2 := &MyType{"Hoge", "Fuga", "hogefuga"}
 fmt.Println(gova.Validate(v2)) // return error
 ```
+
+## LICENSE
+http://www.wtfpl.net/txt/copying/
