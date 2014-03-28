@@ -45,6 +45,7 @@ func Validate(v interface{}) error {
 
 	if val.Kind() == reflect.Ptr {
 		val = val.Elem()
+		t = val.Type()
 	}
 
 	if val.Kind() != reflect.Struct {
